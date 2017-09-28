@@ -90,10 +90,10 @@ const Drawrender = () => {
         <div className="row">
           <div className="col-xs-12">
             <div id="lista">
-              <h1>Lista</h1>
-              <ul>
+              <h1>Lista de Pasajeros</h1>
+              <div>
                 {listPairs(seats)}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -114,12 +114,12 @@ function listPairs(seats) {
   ];
   return passengers.map((passengers, index) => {
     return (
-      <li key={index}>
+      <div key={index} className="list">
         <p>Asiento N°: {passengers.Item}</p>
         <p>Nombre: {passengers.Nombre}</p>
         <p>Apellido: {passengers.Apellido}</p>
         <p>DNI N°: {passengers.Dni}</p>
-      </li>
+      </div>
     );
   });
 }
