@@ -10,7 +10,7 @@ const RowTable = (props) => {
 
 const RTable = ({ seats }) => {
   return (
-    <table width="300" border="3" className="table table-bordered text-center">
+    <table width="300" height="200" border="3" className="table table-bordered text-center">
       <RowTable items={seats[0]} />
       <RowTable items={seats[1]} />
       <RowTable items={seats[2]} />
